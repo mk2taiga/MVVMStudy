@@ -3,7 +3,8 @@
         xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <data>
-        <variable name="view_model" type="com.example.mvvmstudy.viewmodel.MainViewModel"/>
+        <!--<variable name="view_model" type="com.example.mvvmstudy.viewmodel.MainViewModel"/>-->
+        <variable name="view_model" type="com.example.mvvmstudy.viewmodel.SecondViewModel"/>
         <import type="java.lang.Integer" />
         <import type="android.view.View"/>
     </data>
