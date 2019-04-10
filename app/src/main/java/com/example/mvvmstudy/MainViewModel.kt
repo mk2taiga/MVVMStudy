@@ -11,9 +11,7 @@ class MainViewModel : ViewModel() {
         liveDataText.value = MainRepository().fetchText()
     }
 
-    var text: String? = null
-
     fun fetchText(listener: (String) -> Unit) {
-        text = MainRepository().fetchText()
+        listener(MainRepository().fetchText())
     }
 }
