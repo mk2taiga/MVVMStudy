@@ -5,9 +5,15 @@ import androidx.lifecycle.ViewModel
 
 class MianViewModel: ViewModel() {
 
-    var editText: MutableLiveData<String> = MutableLiveData()
+    var liveDataText: MutableLiveData<String> = MutableLiveData()
 
     fun fetchText(){
-        editText.value = MainRepository().fetchText()
+        liveDataText.value = MainRepository().fetchText()
+    }
+
+    var text: String? = null
+
+    fun fetchText(listener: (String) -> Unit) {
+        text = MainRepository().fetchText()
     }
 }
