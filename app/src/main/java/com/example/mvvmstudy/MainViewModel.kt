@@ -3,11 +3,11 @@ package com.example.mvvmstudy
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
-class MianViewModel: ViewModel() {
+class MainViewModel : ViewModel() {
 
     var liveDataText: MutableLiveData<String> = MutableLiveData()
 
-    fun fetchText(){
+    fun fetchText() {
         liveDataText.value = MainRepository().fetchText()
     }
 
