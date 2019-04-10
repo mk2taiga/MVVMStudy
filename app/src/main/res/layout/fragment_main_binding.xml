@@ -4,6 +4,7 @@
 
     <data>
         <variable name="view_model" type="com.example.mvvmstudy.MainViewModel"/>
+        <import type="java.lang.Integer" />
         <import type="android.view.View"/>
     </data>
 
@@ -27,7 +28,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:text="文字数 + @{view_model.liveDataText.length().toString()}"
+                android:text="@{Integer.toString(view_model.liveDataText.length())}"
                 app:layout_constraintTop_toBottomOf="@+id/edit_text"
                 app:layout_constraintStart_toStartOf="parent"/>
 
