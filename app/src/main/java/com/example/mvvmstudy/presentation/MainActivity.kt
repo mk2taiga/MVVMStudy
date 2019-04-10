@@ -1,7 +1,8 @@
-package com.example.mvvmstudy
+package com.example.mvvmstudy.presentation
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.mvvmstudy.R
 
 class MainActivity : AppCompatActivity() {
 

@@ -1,4 +1,4 @@
-package com.example.mvvmstudy
+package com.example.mvvmstudy.model
 
 class MainRepository {
     fun fetchText(): String {

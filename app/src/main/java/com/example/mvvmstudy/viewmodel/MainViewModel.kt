@@ -1,7 +1,8 @@
-package com.example.mvvmstudy
+package com.example.mvvmstudy.viewmodel
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import com.example.mvvmstudy.model.MainRepository
 
 class MainViewModel : ViewModel() {
 
