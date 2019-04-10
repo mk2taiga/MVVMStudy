@@ -28,7 +28,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:text="@{Integer.toString(view_model.liveDataText.length())}"
+                android:text="@{`文字数：` + Integer.toString(view_model.liveDataText.length())}"
                 app:layout_constraintTop_toBottomOf="@+id/edit_text"
                 app:layout_constraintStart_toStartOf="parent"/>
 
